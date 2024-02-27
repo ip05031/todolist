@@ -1,24 +1,17 @@
 import React from 'react';
-import MyNavbar from './components/Navbar';
+import {Stack,Button}  from 'react-bootstrap'
+
 
 function App() {
   return (
-    <div className="App">
-      <MyNavbar />
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack direction="horizontal" gap={2}>
+    <Button as="a" variant="primary">
+      Button as link
+    </Button>
+    <Button as="a" variant="success">
+      Button as link
+    </Button>
+  </Stack>
   );
 }
 
